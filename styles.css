@@ -1,0 +1,69 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333333;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #986dff;
+    color: rgb(41, 41, 41);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(46, 46, 46, 0.1);
+}
+
+header .Titulo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Repositorios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.Repositorio {
+    background-color: rgb(48, 48, 48);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Repositorio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Repositorio a {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #a3a3a3;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Repositorio a:hover {
+    background-color: #986dff;
+    color: white;
+}
